@@ -1,9 +1,0 @@
-/** This is first sqoop import program using postgreshsql **/
-
-sqoop import \
---connect jdbc:postgresql://localhost/SqoopSampleDatabase \
---username root \
---password root \
---table sample \
---m 1 \
---target-dir /result
