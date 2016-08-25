@@ -12,6 +12,6 @@ sqoop import \
 --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
 --password root \
---table  tablename\
---target-dir /incoming/raw/tablename
+--table  tablename \
+--target-dir /incoming/raw/tablename \
 --where "columnname = 'value'"

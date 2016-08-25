@@ -24,19 +24,20 @@ sqoop import \
 --connect --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
 --table  tablename\
---target-dir /incoming/raw/tablename
---password-file yourpasswordfordatabase
---as-sequencefile
---compression-codec org.apache.hadoop.io.compress.BZip2Codec
---compress
+--target-dir /incoming/raw/tablename \
+--password-file yourpasswordfordatabase \
+--as-sequencefile \
+--compress \
+--compression-codec org.apache.hadoop.io.compress.BZip2Codec 
 
 sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---target-dir /incoming/raw/tablename
---password-file yourpasswordfordatabase
---as-avrodatafile
---compression-codec org.apache.hadoop.io.compress.BZip2Codec
--z
+--table  tablename \
+--target-dir /incoming/raw/tablename \
+--password-file yourpasswordfordatabase \
+--as-avrodatafile \
+-z \
+--compression-codec org.apache.hadoop.io.compress.BZip2Codec 
+

@@ -24,8 +24,8 @@ sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---target-dir /incoming/raw/tablename
+--table  tablename \
+--target-dir /incoming/raw/tablename \
 -P
 
 
@@ -36,6 +36,6 @@ sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---target-dir /incoming/raw/tablename
+--table  tablename \
+--target-dir /incoming/raw/tablename \
 --password-file yourpasswordfordatabase

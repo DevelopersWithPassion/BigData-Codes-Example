@@ -17,8 +17,9 @@ sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---target-dir /incoming/raw/tablename
+--table  tablename \
+--target-dir /incoming/raw/tablename \
+--password-file yourpasswordfordatabase \
 --num-mappers 7
 
 
@@ -27,6 +28,7 @@ sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---target-dir /incoming/raw/tablename
+--table  tablename \
+--target-dir /incoming/raw/tablename \
+--password-file yourpasswordfordatabase \
 -m 7

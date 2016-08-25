@@ -14,6 +14,6 @@ sqoop import \
 --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
 --table  tablename\
---target-dir /incoming/raw/tablename
---direct
+--target-dir /incoming/raw/tablename \
+--direct \
 -P

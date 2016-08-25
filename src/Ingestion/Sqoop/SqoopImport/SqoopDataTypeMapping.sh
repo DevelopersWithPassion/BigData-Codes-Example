@@ -26,9 +26,9 @@ sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---map-column-java column1=Long,column2=String,column3=Float
---target-dir /incoming/raw/tablename
+--table  tablename \
+--map-column-java column1=Long,column2=String,column3=Float \
+--target-dir /incoming/raw/tablename \
 -P
 
 
@@ -40,11 +40,8 @@ sqoop import \
 --username root \
 --table  tablename\
 --hive-import \
---hive-table databaseName.tableName -m 1
---map-column-hive column1=STRING,column2=DECIMAL
-
-
-
+--hive-table databaseName.tableName \
+--map-column-hive column1=STRING,column2=DECIMAL\
 -P
 
 

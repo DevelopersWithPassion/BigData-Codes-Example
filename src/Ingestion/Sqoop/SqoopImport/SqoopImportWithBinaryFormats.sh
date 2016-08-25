@@ -22,9 +22,9 @@ sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---target-dir /incoming/raw/tablename
---password-file yourpasswordfordatabase
+--table  tablename \
+--target-dir /incoming/raw/tablename \
+--password-file yourpasswordfordatabase \
 --as-sequencefile
 
 
@@ -32,9 +32,9 @@ sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---target-dir /incoming/raw/tablename
---password-file yourpasswordfordatabase
+--table  tablename \
+--target-dir /incoming/raw/tablename \
+--password-file yourpasswordfordatabase \
 --as-avrodatafile
 
 
@@ -43,9 +43,9 @@ sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---target-dir /incoming/raw/tablename
---password-file yourpasswordfordatabase
+--table  tablename \
+--target-dir /incoming/raw/tablename \
+--password-file yourpasswordfordatabase \
 --as-parquetfile
 
 
@@ -54,7 +54,7 @@ sqoop import \
 --connection-manager "org.apache.sqoop.manager.GenericJdbcManager" \
 --connect --connect jdbc:postgresql://localhost:5432/databsename \
 --username root \
---table  tablename\
---target-dir /incoming/raw/tablename
---password-file yourpasswordfordatabase
+--table  tablename \
+--target-dir /incoming/raw/tablename \
+--password-file yourpasswordfordatabase \
 --as-textfile
