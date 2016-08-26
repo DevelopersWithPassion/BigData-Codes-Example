@@ -5,4 +5,4 @@ sqoop import \
 --connect jdbc:postgresql://localhost/SqoopSampleDatabase \
 --username root \
 --password root \
---table sample \
+--table sample 
