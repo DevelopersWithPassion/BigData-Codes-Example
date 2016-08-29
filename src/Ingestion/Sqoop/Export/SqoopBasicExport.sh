@@ -4,7 +4,7 @@ RDBMS system. Sqoop provide export facility to do so. it works similar to import
 
 
 
-export : parameter to specify and tells sqoop to export data
+export : parameter to tell sqoop to export data
 --export-dir : DIrectory from where sqoop will fetch data and put into rdbms
 
 COMMENT
